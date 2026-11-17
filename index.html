@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexandra &amp; Jan · 3. 7. 2027</title>
+  <meta name="description" content="Svatba Alexandry a Jana – 3. července 2027, Sudice u Boskovic">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Reusable flower SVG symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="flower" viewBox="0 0 100 100">
+        <g>
+          <ellipse cx="50" cy="25" rx="14" ry="22"/>
+          <ellipse cx="50" cy="75" rx="14" ry="22"/>
+          <ellipse cx="25" cy="50" rx="22" ry="14"/>
+          <ellipse cx="75" cy="50" rx="22" ry="14"/>
+          <ellipse cx="32" cy="32" rx="14" ry="20" transform="rotate(-45 32 32)"/>
+          <ellipse cx="68" cy="68" rx="14" ry="20" transform="rotate(-45 68 68)"/>
+          <ellipse cx="68" cy="32" rx="14" ry="20" transform="rotate(45 68 32)"/>
+          <ellipse cx="32" cy="68" rx="14" ry="20" transform="rotate(45 32 68)"/>
+        </g>
+        <circle cx="50" cy="50" r="11" fill="#ffe59e"/>
+      </symbol>
+      <symbol id="leaf" viewBox="0 0 100 40">
+        <path d="M2 20 Q50 -10 98 20 Q50 50 2 20Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="test-banner">⚠️ Toto je pouze testovací stránka – obsah není finální.</div>
+
+  <div class="test-modal" id="testModal" role="dialog" aria-modal="true" aria-labelledby="testModalTitle">
+    <div class="test-modal-box">
+      <svg class="card-icon" style="fill:var(--pink)"><use href="#flower"/></svg>
+      <h3 id="testModalTitle">Upozornění</h3>
+      <p>Toto je pouze testovací stránka – obsah není finální.</p>
+      <button class="btn btn-small" onclick="document.getElementById('testModal').remove()">Rozumím</button>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="#uvod" class="nav-logo">A &amp; J</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
+    <ul>
+      <li><a href="#pribeh">Náš příběh</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#misto">Místo</a></li>
+      <li><a href="#info">Informace</a></li>
+      <li><a href="#rsvp">Potvrzení účasti</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header id="uvod" class="hero">
+    <svg class="fl fl-1"><use href="#flower"/></svg>
+    <svg class="fl fl-2"><use href="#flower"/></svg>
+    <svg class="fl fl-3"><use href="#flower"/></svg>
+    <svg class="fl fl-4"><use href="#flower"/></svg>
+    <svg class="fl fl-5"><use href="#flower"/></svg>
+    <svg class="fl fl-6"><use href="#flower"/></svg>
+
+    <p class="hero-kicker">Bereme se!</p>
+    <h1><span>Alexandra</span><span class="amp">&amp;</span><span>Jan</span></h1>
+    <p class="hero-date">sobota 3. července 2027</p>
+    <p class="hero-place">Sudice u Boskovic</p>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div><b id="cd-days">–</b><span>dní</span></div>
+      <div><b id="cd-hours">–</b><span>hodin</span></div>
+      <div><b id="cd-mins">–</b><span>minut</span></div>
+    </div>
+
+    <a href="#rsvp" class="btn">Potvrdit účast</a>
+  </header>
+
+  <main>
+
+    <!-- PŘÍBĚH -->
+    <section id="pribeh" class="section">
+      <h2>Náš příběh</h2>
+      <div class="divider"><svg><use href="#flower"/></svg></div>
+      <div class="story">
+        <div class="story-img placeholder bg-pink">
+          <svg><use href="#flower"/></svg>
+          <span>sem přijde fotka</span>
+        </div>
+        <div class="story-text">
+          <p>Tady bude krátký příběh o tom, jak jsme se poznali, první rande, žádost o ruku…
+          <em>(text doplníme)</em></p>
+          <p>Moc se těšíme, že tento výjimečný den oslavíme právě s vámi.</p>
+          <p class="signature">Alexandra &amp; Jan</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM -->
+    <section id="program" class="section section-tint">
+      <h2>Program dne</h2>
+      <div class="divider"><svg><use href="#flower"/></svg></div>
+      <ol class="timeline">
+        <li class="c-peach"><time>13:00</time><h3>Příjezd hostů</h3><p>Uvítací drink a malé občerstvení</p></li>
+        <li class="c-pink"><time>14:00</time><h3>Obřad</h3><p>Slavnostní chvíle, kdy si řekneme „ano“</p></li>
+        <li class="c-lilac"><time>14:45</time><h3>Gratulace a focení</h3><p>Společné fotky se všemi hosty</p></li>
+        <li class="c-mint"><time>16:00</time><h3>Svatební hostina</h3><p>Oběd, přípitky a krájení dortu</p></li>
+        <li class="c-sky"><time>19:00</time><h3>První tanec</h3><p>A pak už jen zábava do ranních hodin</p></li>
+        <li class="c-yellow"><time>22:00</time><h3>Večerní raut</h3><p>Pro všechny, kdo ještě vydrží 🙂</p></li>
+      </ol>
+      <p class="note">Časy jsou orientační – upřesníme.</p>
+    </section>
+
+    <!-- MÍSTO -->
+    <section id="misto" class="section">
+      <h2>Místo konání</h2>
+      <div class="divider"><svg><use href="#flower"/></svg></div>
+      <div class="place">
+        <div class="place-card">
+          <h3>Sudice 50</h3>
+          <p>680 01 Sudice-Boskovice<br>Česko</p>
+          <p class="muted">Obřad i oslava proběhnou na jednom místě.</p>
+          <a class="btn btn-small" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Sudice+50,+680+01+Sudice">Navigovat</a>
+          <h4>Parkování</h4>
+          <p class="muted">Informace o parkování doplníme.</p>
+        </div>
+        <div class="map">
+          <iframe title="Mapa – Sudice 50"
+            src="https://maps.google.com/maps?q=Sudice%2050%2C%20680%2001%20Sudice&z=14&output=embed"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <section id="info" class="section section-tint">
+      <h2>Užitečné informace</h2>
+      <div class="divider"><svg><use href="#flower"/></svg></div>
+      <div class="cards">
+        <article class="card c-pink">
+          <svg class="card-icon"><use href="#flower"/></svg>
+          <h3>Dress code</h3>
+          <p>Letní elegance v pastelových barvách. Bílou prosím nechte nevěstě 🙂</p>
+        </article>
+        <article class="card c-mint">
+          <svg class="card-icon"><use href="#flower"/></svg>
+          <h3>Ubytování</h3>
+          <p>Tipy na ubytování v okolí Boskovic doplníme.</p>
+        </article>
+        <article class="card c-lilac">
+          <svg class="card-icon"><use href="#flower"/></svg>
+          <h3>Dary</h3>
+          <p>Největším darem je pro nás vaše přítomnost. Detaily doplníme.</p>
+        </article>
+        <article class="card c-peach">
+          <svg class="card-icon"><use href="#flower"/></svg>
+          <h3>Děti</h3>
+          <p>Informace o programu pro děti doplníme.</p>
+        </article>
+        <article class="card c-sky">
+          <svg class="card-icon"><use href="#flower"/></svg>
+          <h3>Doprava</h3>
+          <p>Možnosti dopravy a případný odvoz po oslavě doplníme.</p>
+        </article>
+        <article class="card c-yellow">
+          <svg class="card-icon"><use href="#flower"/></svg>
+          <h3>Kontakt</h3>
+          <p>Svědci / koordinátor – kontakty doplníme.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section">
+      <h2>Potvrzení účasti</h2>
+      <div class="divider"><svg><use href="#flower"/></svg></div>
+      <p class="center">Dejte nám prosím vědět do <b>1. dubna 2027</b>.</p>
+      <form class="rsvp" onsubmit="event.preventDefault(); this.classList.add('sent');">
+        <label>Jméno a příjmení
+          <input type="text" name="jmeno" required>
+        </label>
+        <label>E-mail nebo telefon
+          <input type="text" name="kontakt">
+        </label>
+        <fieldset>
+          <legend>Přijdete?</legend>
+          <label class="radio"><input type="radio" name="ucast" value="ano" required> Ano, rád/a přijdu</label>
+          <label class="radio"><input type="radio" name="ucast" value="ne"> Bohužel nemohu</label>
+        </fieldset>
+        <label>Počet osob
+          <input type="number" name="pocet" min="1" max="10" value="1">
+        </label>
+        <label>Stravovací omezení / alergie
+          <input type="text" name="strava">
+        </label>
+        <label>Vzkaz pro nás
+          <textarea name="vzkaz" rows="3"></textarea>
+        </label>
+        <button class="btn" type="submit">Odeslat</button>
+        <p class="sent-msg">Děkujeme! (Formulář zatím nikam neodesílá – napojíme později.)</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <svg class="fl-foot"><use href="#flower"/></svg>
+    <p class="footer-names">Alexandra &amp; Jan</p>
+    <p>3. 7. 2027 · Sudice</p>
+  </footer>
+
+  <script>
+    (function () {
+      var target = new Date('2027-07-03T14:00:00+02:00').getTime();
+      function tick() {
+        var d = Math.max(0, target - Date.now());
+        document.getElementById('cd-days').textContent = Math.floor(d / 864e5);
+        document.getElementById('cd-hours').textContent = Math.floor(d / 36e5) % 24;
+        document.getElementById('cd-mins').textContent = Math.floor(d / 6e4) % 60;
+      }
+      tick(); setInterval(tick, 30000);
+      document.querySelectorAll('.nav a').forEach(function (a) {
+        a.addEventListener('click', function () { document.body.classList.remove('menu-open'); });
+      });
+    })();
+  </script>
+</body>
+</html>
