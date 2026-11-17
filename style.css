@@ -174,10 +174,11 @@ a { color: var(--accent); }
 
 /* RSVP */
 .rsvp {
-  max-width: 520px; margin: 2rem auto 0; background: #fff; padding: 2rem;
+  width: 100%; max-width: 760px; margin: 2rem auto 0; background: #fff; padding: 2rem;
   border-radius: var(--radius); box-shadow: 0 8px 24px rgba(90,74,85,.08);
   display: grid; gap: 1rem; border-top: 6px solid var(--pink);
 }
+.rsvp iframe { width: 100%; display: block; border: 0; }
 .rsvp label { display: grid; gap: .3rem; font-weight: 600; font-size: .95rem; }
 .rsvp input[type=text], .rsvp input[type=number], .rsvp textarea {
   font: inherit; padding: .7rem .9rem; border: 2px solid #f0e2e8; border-radius: 12px; background: #fffdfc;
@@ -213,6 +214,7 @@ a { color: var(--accent); }
 }
 @media (max-width: 520px) {
   .cards { grid-template-columns: 1fr; }
+  .rsvp { padding: 1.2rem 1rem; }
   .countdown div { min-width: 70px; padding: .6rem .8rem; }
   .timeline::before { left: 54px; }
   .timeline li { padding-left: 80px; }
