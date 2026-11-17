@@ -180,30 +180,13 @@
       <h2>Potvrzení účasti</h2>
       <div class="divider"><svg><use href="#flower"/></svg></div>
       <p class="center">Dejte nám prosím vědět do <b>1. dubna 2027</b>.</p>
-      <form class="rsvp" onsubmit="event.preventDefault(); this.classList.add('sent');">
-        <label>Jméno a příjmení
-          <input type="text" name="jmeno" required>
-        </label>
-        <label>E-mail nebo telefon
-          <input type="text" name="kontakt">
-        </label>
-        <fieldset>
-          <legend>Přijdete?</legend>
-          <label class="radio"><input type="radio" name="ucast" value="ano" required> Ano, rád/a přijdu</label>
-          <label class="radio"><input type="radio" name="ucast" value="ne"> Bohužel nemohu</label>
-        </fieldset>
-        <label>Počet osob
-          <input type="number" name="pocet" min="1" max="10" value="1">
-        </label>
-        <label>Stravovací omezení / alergie
-          <input type="text" name="strava">
-        </label>
-        <label>Vzkaz pro nás
-          <textarea name="vzkaz" rows="3"></textarea>
-        </label>
-        <button class="btn" type="submit">Odeslat</button>
-        <p class="sent-msg">Děkujeme! (Formulář zatím nikam neodesílá – napojíme později.)</p>
-      </form>
+      <div class="rsvp">
+        <iframe data-tally-src="https://tally.so/embed/vXD4a0?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0"
+          title="Potvrzení účasti na svatbě"></iframe>
+        <p class="center muted">Formulář se nenačetl? <a href="https://tally.so/r/vXD4a0" target="_blank" rel="noopener">Otevřít v novém okně</a></p>
+      </div>
+      <script async src="https://tally.so/widgets/embed.js" onload="Tally.loadEmbeds()"></script>
     </section>
 
   </main>
